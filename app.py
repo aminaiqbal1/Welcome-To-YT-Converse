@@ -67,7 +67,7 @@ SystemMessagePromptTemplate.from_template(
     if len(msgs.messages) == 0:
         msgs.add_ai_message("Hello! How can I assist you today?")
 
-    llm_chain = prompt | ChatGoogleGenerativeAI(model="gemini-1.5-flash",google_api_key=("AIzaSyAsZJah6iOEH-C5rKlHLi5LoZys8pkYtqg"))
+    llm_chain = prompt | ChatGoogleGenerativeAI(model="gemini-1.5-flash",google_api_key=("AIzaSyAwH90uYybjHQ9-snmFtDc2DnjwlaWb874"))
 
     USER_AVATAR = "👤"
     BOT_AVATAR = "🤖"
