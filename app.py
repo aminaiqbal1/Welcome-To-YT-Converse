@@ -85,7 +85,7 @@ SystemMessagePromptTemplate.from_template(
             
             try:
                 response = llm_chain.stream({"question":prompt,"chat_history":st.session_state.
-                                        langchain_messages[0:40]})
+                                        langchain_messages[0:20]})
 
                 for res in response:
                     full_response += res.content or "" 
